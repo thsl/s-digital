@@ -26,6 +26,6 @@ $(document).ready(function () {
         // Dom where it will apply
         $('html, body').stop().animate({
             scrollTop: $(window).scrollTop() - (distance * delta)
-        }, time );
+        }, time);
     }
 });
