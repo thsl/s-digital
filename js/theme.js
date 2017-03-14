@@ -7,20 +7,20 @@ $(document).ready(function () {
     new WOW().init();
 // smooth scroller
 
-    smooth();
+    // smooth();
 
 // Faz o back do browser fechar o modal
     $(".modal").on("shown.bs.modal", function() { // any time a modal is shown
         var urlReplace = "#" + $(this).attr('id'); // make the hash the id of the modal shown
         history.pushState(null, null, urlReplace); // push state that hash into the url
 
-        smoothOff();
+        // smoothOff();
     });
 
     $(".modal").on("hidden", function() { // any time a modal is shown
        console.log("desligando");
 
-        smoothOff();
+        // smoothOff();
     });
 
     $('#modal-detalha').on('shown', function() {
@@ -30,12 +30,12 @@ $(document).ready(function () {
     $('#modal-detalha').on('hidden', function() {
         $("body").css("overflow", "visible");
         console.log("ligando");
-        smooth();
+        // smooth();
     });
 
     $('body').on('hidden.bs.modal', '.modal', function() {
         $(this).removeData('bs.modal');
-       smooth();
+       // smooth();
     });
 
 // If a pushstate has previously happened and the back button is clicked, hide any modals.
@@ -45,7 +45,7 @@ $(document).ready(function () {
 
 });
 
-
+/*
 function smoothOff(){
 
 
@@ -78,13 +78,12 @@ function smooth() {
     }
 
     function handle(delta) {
-        var time = 1000; // delay time
-        var distance = 300; // delta point
-        // Dom where it will apply
+        var time = 1000;
+        var distance = 300;
         $('body').stop().animate({
             scrollTop: $(window).scrollTop() - (distance * delta)
         }, time);
     }
 
 
-}
+}*/
