@@ -51,7 +51,22 @@
 #intro {
   padding: 15px 0 120px 0;
   position: relative;
-
+  .btn-video {
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border: 0;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-family: @font-family-myriad-cd;
+    color: #1A9587;
+    padding: 7px 20px 5px 20px;
+    img{
+      width: 30px;
+      margin-right: 8px;
+    }
+  }
   &:before {
     content: "";
     position: absolute;
@@ -83,6 +98,10 @@
       padding-top: 260px;
       padding-left: 0;
     }
+    p{
+      font-size: 20px;
+      line-height: normal;
+    }
   }
   .imgs-intro {
     position: relative;
@@ -95,19 +114,19 @@
 
     }
     .watch {
-      top: 120px;
+      top: 150px;
       left: 137px;
     }
     .financas {
-      top: 30px;
+      top: 60px;
       left: 220px;
     }
     .sico-card {
-      top: 80px;
+      top: 110px;
       left: -35px;
     }
     .phone {
-      top: -50px;
+      top: -20px;
       left: 40px;
       width: 260px;
       position: absolute;
