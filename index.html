@@ -22,7 +22,24 @@
     </head>
     <body id="home">
         <!--[if lt IE 9]>Seu navegador é muito antigo, por favor atualize-o.<![endif]-->
+
         <div id="wrapper">
+            <div class="navbar-fixedtop">
+                <div class="nav-content">
+                    <ul class="list-inline list-unstyled">
+                        <li class="list-inline-item"><a href="#"><img src="img/outros/btn-twitter.png" height="40"></a>
+                        </li>
+                        <li class="list-inline-item"><a href="#"><img src="img/outros/btn-face.png" height="40"></a>
+                        </li>
+                        <li class="list-inline-item"><a href="#"><img src="img/outros/btn-youtube.png" height="40"></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="javascript:void(0)" data-toggle="modal" data-target="#modal-chat"><img src="img/outros/btn-chat.png" height="40"></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
             <div class="header-master">
                 <div class="container">
                     <div class="row">
@@ -122,7 +139,7 @@
                                     <div class="item-text">
                                         <h4 class="text-uppercase">
                                             Acesso com impressão digital </h4>
-                                        <p>Acesse o SICOOBNET CELULAR utilizando sua impressão digital</p>
+                                        <p>Acesse os aplicativos utilizando sua impressão digital</p>
                                     </div>
                                 </div>
                             </div>
@@ -151,7 +168,7 @@
                                     <div class="item-text">
                                         <h4 class="text-uppercase">
                                             Pagamento de conta em PDF no celular </h4>
-                                        <p>Reconhecimento automático dos dados de seu boleto em PDF</p>
+                                        <p>Reconhecimento automático dos dados de seu boleto em arquivo PDF</p>
                                     </div>
                                 </div>
                             </div>
@@ -373,12 +390,20 @@
                             <h5>Ouvidoria</h5>
                             <h4>0800 725 0996</h4>
                             <p>Atendimento Seg. a Sex. - 8h às 20h</p>
+                            <ul class="list-inline list-unstyled mt-md">
+                                <li class="list-inline-item">
+                                    <a href="#"><img src="img/outros/btn-twitter.png" height="30"></a></li>
+                                <li class="list-inline-item"><a href="#"><img src="img/outros/btn-face.png" height="30"></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><img src="img/outros/btn-youtube.png" height="30"></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade modal-custom" id="modal-detalha" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade modal-custom" id="modal-detalha" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
             <div class="modal-header">
                 <div class="header-content">
                     <a href="#">
@@ -447,6 +472,54 @@
                                             <img src="img/fotos/perspectiva-sicoobnet.png" style="transform: translate(-19%, -133px); position:absolute;">
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade modal-custom modal-chat" id="modal-chat" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+            <div class="modal-header">
+                <div class="header-content">
+                    <a href="#" data-dismiss="modal" aria-label="Close">
+                        <img class="" src="img/icones/FECHAR.png" width="60"></a>
+                </div>
+            </div>
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4><img src="img/icones/chat.png"> Converse com o Sicoob</h4>
+                            </div>
+                            <div class="card-block">
+                                <div class="chat">
+                                    <div class="chat-content">
+                                        <div class="speech-user">
+                                            <small>Você disse:</small>
+                                            <div class="speech-bubble-user">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rhoncus sollicitudin vehicula.</p>
+                                                <p>Donec porttitor lorem tortor, suscipit hendrerit metus imperdiet ultrices. Nam non tellus massa.</p>
+                                            </div>
+                                        </div>
+                                        <div class="speech-sicoob mt-md">
+                                            <small class="text-right">O Sicoob disse:</small>
+                                            <div class="speech-bubble-sicoob">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rhoncus sollicitudin vehicula.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Digite seu texto">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-secondary btn-envia" type="button">enviar</button>
+                                    </span>
                                 </div>
                             </div>
                         </div>
