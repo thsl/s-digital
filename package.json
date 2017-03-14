@@ -4,7 +4,7 @@
   "description": "Sicoob Digital HotSite",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.14.0",
+    "express": "^4.14.0"
   },
   "devDependencies": {},
   "scripts": {
