@@ -88,7 +88,13 @@
 }
 
 .modal-chat {
-
+.card-block{
+  @media (max-width: @screen-md) {
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+}
   .speech-bubble-user {
     position: relative;
     width: 100%;
@@ -154,11 +160,13 @@
       top: 7px;
     }
   }
-  .btn-envia {
-    background-color: #509a93;
-    text-transform: uppercase;
-    //font-size: 0.7em;
-    font-family: @font-family-myriad-cd;
-    color: #fff;
-  }
+
+}
+.btn-envia {
+  background-color: #509a93;
+  text-transform: uppercase;
+  //font-size: 0.7em;
+  font-family: @font-family-myriad-cd;
+  color: #fff;
+  border: 0;
 }
