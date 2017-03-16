@@ -45,5 +45,8 @@ $(document).ready(function () {
             $(".navbar-fixedtop").removeClass("toggle-navbar");
         }
     });
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
 });
 
